@@ -1,16 +1,15 @@
-// print factorial of 5
+// print factorial of given number
 #include<iostream>
 using namespace std;
-
 int main()
 {
-    int fact = 1, i = 5;
-
-    while(i>=1)
+    int i=1,fact=1,n;
+    cout<<"Enter a Number: ";
+    cin>>n;
+    while(i<=n)
     {
-        fact = fact * i;
-        i--;
+        fact=fact*i;
+        i++;
     }
-    cout << "Factorial of 5 is: " << fact << endl;
-
+    cout<<"Factorial of "<<n<<" is "<<fact;
 }
